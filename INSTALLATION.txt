@@ -1,0 +1,43 @@
+# SPECTR Web Vulnerability Scanner - Installation Guide
+
+## Quick Start
+
+1. Extract this ZIP file to your desired location
+2. Open terminal/command prompt in the extracted SPECTR directory
+3. Install Python dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+4. Run SPECTR:
+   ```
+   python spectr
+   ```
+
+## Usage
+
+When you run SPECTR, you'll be prompted to enter:
+- Target URL (e.g., http://testphp.vulnweb.com/artists.php)
+- HTTP method (GET/POST)
+- Parameters (e.g., artist=1)
+- Headers (optional)
+- Verbose mode (y/n)
+
+## Example Test
+
+Try testing: http://testphp.vulnweb.com/artists.php with parameter artist=1
+
+SPECTR will detect multiple vulnerabilities including SQL injection, XSS, and path traversal.
+
+## Requirements
+
+- Python 3.6 or higher
+- Internet connection for testing external targets
+- Only test applications you own or have authorization to test
+
+## Legal Notice
+
+This tool is for authorized security testing only. Ensure you have proper permission before scanning any target.
+
+## Support
+
+Refer to README.md for detailed documentation.
